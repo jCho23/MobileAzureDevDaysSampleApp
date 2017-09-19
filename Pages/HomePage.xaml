@@ -29,6 +29,7 @@
             VerticalOptions= "Center"
             Text= "Submit"
             TextColor= "White"
+            FontSize= "Large"
             Clicked= "Handle_Clicked" />
 
     </StackLayout>
