@@ -8,7 +8,7 @@ namespace MobileAzureDevDaysSampleApp
         {
             InitializeComponent();
 
-            MainPage = new MobileAzureDevDaysSampleAppPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()
