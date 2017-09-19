@@ -14,13 +14,17 @@
 
     
    <StackLayout
-        Padding= "30,80">
+
+        Padding= "30,80" >
+
+        <Frame>
     <Editor>
        <!-- <Entry
             
             Keyboard= "Text"
             Placeholder= "Please write something.." />-->
-      </Editor>   
+      </Editor> 
+            </Frame>
 
         <Button
             HorizontalOptions= "Center"
@@ -28,6 +32,7 @@
             Text= "Submit"
             TextColor= "White"
             Clicked= "Handle_Clicked" />
+
     </StackLayout>
 
 </ContentPage>
