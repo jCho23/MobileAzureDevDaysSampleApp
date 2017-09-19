@@ -5,9 +5,17 @@
     x:Class="MobileAzureDevDaysSampleApp.HomePage"
     BackgroundColor= "Pink">
 
+   <StackLayout>
+
+        <Entry
+            Placeholder= "Please write something.." />
+
+        <Button
+            HorizontalOptions= "Center"
+            VerticalOptions= "Center"
+            Text= Submit
 
 
+    </StackLayout>
 
-
-    
 </ContentPage>
