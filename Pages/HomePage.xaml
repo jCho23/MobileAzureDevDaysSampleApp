@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="MobileAzureDevDaysSampleApp.HomePage"
+    xmlns:local="clr-namespace:MobileAzureDevDaysSampleApp.Controls"
     BackgroundColor= "#FF6F69"
     Title= "Sentiment" >
 
@@ -14,19 +15,31 @@
 
    <StackLayout
         Padding= "30,90" >
-        <Frame
-            HasShadow= "false">
-            <Editor>
+        <Frame>
+            <Frame.HasShadow>
+                <OnPlatform x:TypeArguments="x:Boolean"
+                    iOS="false"
+                    Android="true"
+                    WinPhone="true" />
+            </Frame.HasShadow>
+            <local:EditorWithPlaceholder Placeholder="My Placeholder">
+                
+            </local:EditorWithPlaceholder>
+            <!--<Editor/>-->
        <!--<Entry
             
             Keyboard= "Text"
             Placeholder= "Please write something.." />-->
-            </Editor> 
+
         </Frame>
 
         <Button
-            HorizontalOptions= "Center"
+            Margin="50,10"
+            HorizontalOptions= "FillAndExpand"
             VerticalOptions= "Center"
+            BorderRadius="0"
+            BorderWidth="1"
+            BorderColor = "White"
             Text= "Submit"
             TextColor= "White"
             FontSize= "Large"
