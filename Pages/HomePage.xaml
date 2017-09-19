@@ -3,10 +3,11 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="MobileAzureDevDaysSampleApp.HomePage"
-    BackgroundColor= "Pink">
+    BackgroundColor= "#FF6F69">
 
+    
    <StackLayout>
-
+  
         <Entry
             Placeholder= "Please write something.." />
 
@@ -14,8 +15,9 @@
             HorizontalOptions= "Center"
             VerticalOptions= "Center"
             Text= "Submit"
+            TextColor= "White"
             Clicked= "Handle_Clicked" />
-
+         
     </StackLayout>
 
 </ContentPage>
