@@ -13,8 +13,8 @@
         <Button
             HorizontalOptions= "Center"
             VerticalOptions= "Center"
-            Text= Submit
-
+            Text= "Submit"
+            Clicked= "Handle_Clicked" />
 
     </StackLayout>
 
