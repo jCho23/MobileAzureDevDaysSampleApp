@@ -13,8 +13,9 @@
     </ContentPage.Padding>
 
    <StackLayout
-        Padding= "30,80" >
-        <Frame>
+        Padding= "30,90" >
+        <Frame
+            HasShadow= "false">
             <Editor>
        <!--<Entry
             
