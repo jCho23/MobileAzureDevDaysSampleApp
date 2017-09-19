@@ -12,19 +12,16 @@
             iOS= "0, 20, 0, 0" />
     </ContentPage.Padding>
 
-    
    <StackLayout
-
         Padding= "30,80" >
-
         <Frame>
-    <Editor>
-       <!-- <Entry
+            <Editor>
+       <!--<Entry
             
             Keyboard= "Text"
             Placeholder= "Please write something.." />-->
-      </Editor> 
-            </Frame>
+            </Editor> 
+        </Frame>
 
         <Button
             HorizontalOptions= "Center"
