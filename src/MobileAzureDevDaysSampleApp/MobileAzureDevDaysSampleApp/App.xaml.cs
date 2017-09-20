@@ -9,10 +9,6 @@ namespace MobileAzureDevDaysSampleApp
             InitializeComponent();
 
             MainPage = new HomePage();
-            //{
-            //    BarBackgroundColor= Color.FromHex("#FF6F69"),
-            //    BarTextColor= Color.White,
-            //};
         }
 
         protected override void OnStart()

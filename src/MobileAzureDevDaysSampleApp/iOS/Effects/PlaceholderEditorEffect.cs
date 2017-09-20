@@ -62,7 +62,7 @@ namespace MobileAzureDevDaysSampleApp.iOS.Effects
                     placeholderText.Frame = new CoreGraphics.CGRect(8, 5, formsEditor.Width - 16, 30);
                     break;
                 case nameof(EditorWithPlaceholder.Text):
-					if (string.IsNullOrWhiteSpace(formsEditor.Text))
+                    if (string.IsNullOrEmpty(formsEditor.Text))
 						placeholderText.Alpha = 1;
 					else
 						placeholderText.Alpha = 0;
