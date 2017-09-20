@@ -49,6 +49,11 @@
             VerticalOptions= "Center" 
             IsRunning= "true"
             Color= "White"/>
+
+        <Label
+            Text= "Calculating Sentiment..."
+            TextColor= "White"
+            HorizontalOptions= "Center" VerticalOptions= "Center"/>
         
     </StackLayout>
     
