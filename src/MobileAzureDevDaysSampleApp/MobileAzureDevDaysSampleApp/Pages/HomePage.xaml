@@ -28,7 +28,7 @@
             
             <local:EditorWithPlaceholder 
                 Placeholder="Add Text here...">
-            </local:EditorWithPlaceholder>       
+            </local:EditorWithPlaceholder>    
         </Frame>
 
         <Button
@@ -42,6 +42,12 @@
             TextColor= "White"
             FontSize= "Large"
             Clicked= "Handle_Clicked" />
+
+        <ActivityIndicator
+        HorizontalOptions ="Center"
+            
+        />
+        
     </StackLayout>
     
 </ContentPage>
