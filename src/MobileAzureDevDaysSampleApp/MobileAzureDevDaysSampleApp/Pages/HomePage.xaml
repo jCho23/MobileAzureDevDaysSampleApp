@@ -18,6 +18,8 @@
         <Label
             Text= "Sentiment"
             TextColor= "White"
+            FontSize= "Large"
+            Margin= "10,10"
             VerticalOptions= "Center" HorizontalOptions= "Center"/>
         
         <Frame>
