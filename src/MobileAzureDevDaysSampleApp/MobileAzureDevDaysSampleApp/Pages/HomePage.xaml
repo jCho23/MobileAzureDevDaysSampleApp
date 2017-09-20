@@ -4,8 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="MobileAzureDevDaysSampleApp.HomePage"
     xmlns:local="clr-namespace:MobileAzureDevDaysSampleApp.Controls"
-    BackgroundColor= "#FF6F69"
-    Title= "Sentiment" >
+    BackgroundColor= "#FF6F69" >
 
     <ContentPage.Padding>
         <OnPlatform 
@@ -15,6 +14,12 @@
 
    <StackLayout
         Padding= "30,90" >
+
+        <Label
+            Text= "Sentiment"
+            TextColor= "White"
+            VerticalOptions= "Center" HorizontalOptions= "Center"/>
+        
         <Frame>
             <Frame.HasShadow>
                 <OnPlatform 
