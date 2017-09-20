@@ -32,8 +32,8 @@
         </Frame>
 
         <Button
-            Margin="50,10"
-            HorizontalOptions= "FillAndExpand"
+            Margin= "50,10"
+            HorizontalOptions= "FillAndExpand" 
             VerticalOptions= "Center"
             BorderRadius="0"
             BorderWidth="1"
@@ -44,9 +44,11 @@
             Clicked= "Handle_Clicked" />
 
         <ActivityIndicator
-        HorizontalOptions ="Center"
-            
-        />
+            Margin= "20,20"
+            HorizontalOptions ="Center"
+            VerticalOptions= "Center" 
+            IsRunning= "true"
+            Color= "White"/>
         
     </StackLayout>
     
