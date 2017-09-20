@@ -4,7 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="MobileAzureDevDaysSampleApp.HomePage"
     xmlns:local="clr-namespace:MobileAzureDevDaysSampleApp.Controls"
-    BackgroundColor= "#FF6F69" >
+    BackgroundColor= "#FF6F69"
+    Title= "Sentiment">
 
     <ContentPage.Padding>
         <OnPlatform 
@@ -13,51 +14,52 @@
     </ContentPage.Padding>
 
    <StackLayout
-        Padding= "30,90" >
+        Padding= "0" >
 
-        <!--<Label
+        <Label
             Text= "Sentiment"
             TextColor= "White"
             FontSize= "Large"
             Margin= "10,10"
-            VerticalOptions= "Center" HorizontalOptions= "Center"/>-->
-        
-        <Frame>
-            <Frame.HasShadow>
-                <OnPlatform 
-                    x:TypeArguments="x:Boolean"
-                    iOS="false"
-                    Android="true"
-                    WinPhone="true" />
-            </Frame.HasShadow>
-            
-            <local:EditorWithPlaceholder 
-                Placeholder="Add Text here...">
-            </local:EditorWithPlaceholder>    
-        </Frame>
+            VerticalOptions= "Center" HorizontalOptions= "Center"/>
 
-        <Button
-            Text= "Submit"
-            Margin= "50,10"
-            FontSize= "Large"
-            TextColor= "White"
-            Clicked= "OnSubmitButton" 
-            BorderRadius="0" BorderWidth="1" BorderColor = "White"
-            HorizontalOptions= "FillAndExpand" VerticalOptions= "Center" />
+        <StackLayout Padding = "30,90">
+            <Frame>
+                <Frame.HasShadow>
+                    <OnPlatform 
+                        x:TypeArguments="x:Boolean"
+                        iOS="false"
+                        Android="true"
+                        WinPhone="true" />
+                </Frame.HasShadow>
+                
+                <local:EditorWithPlaceholder 
+                    Placeholder="Add Text here...">
+                </local:EditorWithPlaceholder>    
+            </Frame>
 
-        <ActivityIndicator
-            Color= "White"
-            Margin= "20,20"
-            IsVisible="true"
-            IsRunning= "true"
-            HorizontalOptions ="Center" VerticalOptions= "Center" /> 
-          <!--  "{Binding Source={x:Reference ... }, Path=IsLoading}"-->
+            <Button
+                Text= "Submit"
+                Margin= "50,10"
+                FontSize= "Large"
+                TextColor= "White"
+                Clicked= "OnSubmitButton" 
+                BorderRadius="0" BorderWidth="1" BorderColor = "White"
+                HorizontalOptions= "FillAndExpand" VerticalOptions= "Center" />
 
-        <Label
-            IsVisible="true"
-            TextColor= "White"
-            Text= "Calculating Sentiment..."
-            HorizontalOptions= "Center" VerticalOptions= "Center"/>
+            <ActivityIndicator
+                Color= "White"
+                Margin= "20,20"
+                IsVisible="true"
+                IsRunning= "true"
+                HorizontalOptions ="Center" VerticalOptions= "Center" /> 
+              <!--  "{Binding Source={x:Reference ... }, Path=IsLoading}"-->
+
+            <Label
+                IsVisible="true"
+                TextColor= "White"
+                Text= "Calculating Sentiment..."
+                HorizontalOptions= "Center" VerticalOptions= "Center"/>
+            </StackLayout>
     </StackLayout>
-    
 </ContentPage>
