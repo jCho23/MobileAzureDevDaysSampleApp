@@ -10,6 +10,7 @@
     <ContentPage.Padding>
         <OnPlatform 
             x:TypeArguments= "Thickness"
+
             iOS= "0, 20, 0, 0" />
     </ContentPage.Padding>
 
@@ -17,20 +18,17 @@
         Padding= "30,90" >
         <Frame>
             <Frame.HasShadow>
-                <OnPlatform x:TypeArguments="x:Boolean"
+                <OnPlatform 
+                    x:TypeArguments="x:Boolean"
+
                     iOS="false"
                     Android="true"
                     WinPhone="true" />
             </Frame.HasShadow>
-            <local:EditorWithPlaceholder Placeholder="Add Text here...">
-                
-            </local:EditorWithPlaceholder>
-            <!--<Editor/>-->
-       <!--<Entry
             
-            Keyboard= "Text"
-            Placeholder= "Please write something.." />-->
-
+            <local:EditorWithPlaceholder 
+                Placeholder="Add Text here...">
+            </local:EditorWithPlaceholder>       
         </Frame>
 
         <Button
@@ -44,7 +42,6 @@
             TextColor= "White"
             FontSize= "Large"
             Clicked= "Handle_Clicked" />
-
     </StackLayout>
-
+    
 </ContentPage>
