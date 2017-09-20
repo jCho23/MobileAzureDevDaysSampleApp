@@ -34,7 +34,7 @@
             Margin= "50,10"
             FontSize= "Large"
             TextColor= "White"
-            Clicked= "Handle_Clicked" 
+            Clicked= "OnSubmitButton" 
             BorderRadius="0" BorderWidth="1" BorderColor = "White"
             HorizontalOptions= "FillAndExpand" VerticalOptions= "Center" />
 
