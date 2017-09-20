@@ -8,7 +8,10 @@ namespace MobileAzureDevDaysSampleApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new HomePage())
+            {
+                BarBackgroundColor= Color.FromHex("#FF6F69")
+            };
 
    
         }
