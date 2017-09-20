@@ -15,12 +15,12 @@
    <StackLayout
         Padding= "30,90" >
 
-        <Label
+        <!--<Label
             Text= "Sentiment"
             TextColor= "White"
             FontSize= "Large"
             Margin= "10,10"
-            VerticalOptions= "Center" HorizontalOptions= "Center"/>
+            VerticalOptions= "Center" HorizontalOptions= "Center"/>-->
         
         <Frame>
             <Frame.HasShadow>
