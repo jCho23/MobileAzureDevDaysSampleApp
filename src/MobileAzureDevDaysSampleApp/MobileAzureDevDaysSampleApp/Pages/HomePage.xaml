@@ -41,11 +41,13 @@
         <ActivityIndicator
             Color= "White"
             Margin= "20,20"
-            IsRunning= "true" 
+            IsVisible="true"
+            IsRunning= "true"
             HorizontalOptions ="Center" VerticalOptions= "Center" /> 
-          <!--  "{Binding Source=}"-->
+          <!--  "{Binding Source={x:Reference ... }, Path=IsLoading}"-->
 
         <Label
+            IsVisible="true"
             TextColor= "White"
             Text= "Calculating Sentiment..."
             HorizontalOptions= "Center" VerticalOptions= "Center"/>
