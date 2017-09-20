@@ -10,7 +10,6 @@
     <ContentPage.Padding>
         <OnPlatform 
             x:TypeArguments= "Thickness"
-
             iOS= "0, 20, 0, 0" />
     </ContentPage.Padding>
 
@@ -20,7 +19,6 @@
             <Frame.HasShadow>
                 <OnPlatform 
                     x:TypeArguments="x:Boolean"
-
                     iOS="false"
                     Android="true"
                     WinPhone="true" />
@@ -32,29 +30,24 @@
         </Frame>
 
         <Button
-            Margin= "50,10"
-            HorizontalOptions= "FillAndExpand" 
-            VerticalOptions= "Center"
-            BorderRadius="0"
-            BorderWidth="1"
-            BorderColor = "White"
             Text= "Submit"
-            TextColor= "White"
+            Margin= "50,10"
             FontSize= "Large"
-            Clicked= "Handle_Clicked" />
+            TextColor= "White"
+            Clicked= "Handle_Clicked" 
+            BorderRadius="0" BorderWidth="1" BorderColor = "White"
+            HorizontalOptions= "FillAndExpand" VerticalOptions= "Center" />
 
         <ActivityIndicator
+            Color= "White"
             Margin= "20,20"
-            HorizontalOptions ="Center"
-            VerticalOptions= "Center" 
             IsRunning= "true"
-            Color= "White"/>
+            HorizontalOptions ="Center" VerticalOptions= "Center" /> 
 
         <Label
-            Text= "Calculating Sentiment..."
             TextColor= "White"
+            Text= "Calculating Sentiment..."
             HorizontalOptions= "Center" VerticalOptions= "Center"/>
-        
     </StackLayout>
     
 </ContentPage>
