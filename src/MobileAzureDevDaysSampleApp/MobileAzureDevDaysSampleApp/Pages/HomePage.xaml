@@ -22,7 +22,7 @@
                     Android="true"
                     WinPhone="true" />
             </Frame.HasShadow>
-            <local:EditorWithPlaceholder Placeholder="My Placeholder">
+            <local:EditorWithPlaceholder Placeholder="Add Text here...">
                 
             </local:EditorWithPlaceholder>
             <!--<Editor/>-->
