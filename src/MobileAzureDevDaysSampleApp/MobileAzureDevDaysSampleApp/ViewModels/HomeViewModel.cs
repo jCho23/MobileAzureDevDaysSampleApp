@@ -8,20 +8,21 @@ using System.Threading.Tasks;
 using MobileAzureDevDaysSampleApp.Services;
 using MobileAzureDevDaysSampleApp.Constants;
 
-namespace MobileAzureDevDaysSampleApp
+namespace MobileAzureDevDaysSampleApp.ViewModels
 {
     public class HomeViewModel : INotifyPropertyChanged
     {
-        string emojiLabelText;
+        string emojiLabelText = string.Empty;
         string userInputEditorText = string.Empty;
         bool isInternetConnectionActive;
         ICommand submitButtonCommand;
-        Color backgroundColor;
+        Color backgroundColor = ColorConstants.DefaultBackgroundColor;
 
         public event EventHandler<string> SentimentAnalyisFailed;
         public event PropertyChangedEventHandler PropertyChanged;
 
         public bool IsInternetConnectionInactive => !IsInternetConnectionActive;
+
         public ICommand SubmitButtonCommand => submitButtonCommand ??
             (submitButtonCommand = new Command(async () => await ExecuteSubmitButtonCommand()));
 
@@ -85,10 +86,10 @@ namespace MobileAzureDevDaysSampleApp
                     EmojiLabelText = EmojiConstants.SadFaceEmoji;
                     break;
                 case float number when (number >= 0.4 && number <= 0.6):
-                    EmojiLabelText = EmojiConstants.NeutralFaceEMoji;
+                    EmojiLabelText = EmojiConstants.HappyFaceEMoji;
                     break;
                 case float number when (number > 0.6):
-                    EmojiLabelText = EmojiConstants.HappyFaceEMoji;
+                    EmojiLabelText = EmojiConstants.NeutralFaceEMoji;
                     break;
             }
         }
