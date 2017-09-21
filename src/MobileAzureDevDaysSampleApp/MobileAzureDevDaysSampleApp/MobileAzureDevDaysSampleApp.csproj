@@ -8,6 +8,7 @@
     <Folder Include="Controls\" />
     <Folder Include="Pages\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="App.xaml" />
@@ -32,5 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="App.xaml" />
+    <None Remove="Pages\HomePage.xaml" />
   </ItemGroup>
 </Project>
