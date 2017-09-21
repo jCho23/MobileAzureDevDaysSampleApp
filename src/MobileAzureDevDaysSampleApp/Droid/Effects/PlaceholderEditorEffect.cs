@@ -11,22 +11,49 @@ using MobileAzureDevDaysSampleApp.Droid.Effects;
 
 namespace MobileAzureDevDaysSampleApp.Droid.Effects
 {
-    public class PlaceholderEditorEffect
+    public class PlaceholderEditorEffect : PlatformEffect
     {
-        public class PlacehoderEditorRenderer : EditorRenderer
-        {
-            protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
-            {
-                base.OnElementChanged(e);
+        Android.Graphics.Color backgroundColor;
 
-                if (Element == null)
-                    return;
+		protected override void OnAttached()
+		{
+			try
+			{
+                backgroundColor = Android.Graphics.Color.White;
+				Control.SetBackgroundColor(backgroundColor);
 
-                var element = (EditorWithPlaceholder)Element;
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Cannot set property on attached control. Error: ", ex.Message);
+			}
+		}
 
-                Control.Hint = element.Placeholder;
-                Control.SetHintTextColor(element.PlaceholderTextColor.ToAndroid());
-            }
-        }
-    }
+		protected override void OnDetached()
+		{
+		}
+
+		protected override void OnElementPropertyChanged(System.ComponentModel.PropertyChangedEventArgs args)
+		{
+			base.OnElementPropertyChanged(args);
+			try
+			{
+				if (args.PropertyName == "IsFocused")
+				{
+					if (((Android.Graphics.Drawables.ColorDrawable)Control.Background).Color == backgroundColor)
+					{
+						Control.SetBackgroundColor(Android.Graphics.Color.Black);
+					}
+					else
+					{
+						Control.SetBackgroundColor(backgroundColor);
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Cannot set property on attached control. Error: ", ex.Message);
+			}
+		}
+	}
 }
