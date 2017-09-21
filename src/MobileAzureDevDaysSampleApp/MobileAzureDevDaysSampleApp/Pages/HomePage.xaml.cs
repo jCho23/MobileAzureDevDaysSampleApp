@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Xamarin.Forms;
 
-using Xamarin.Forms;
-
-namespace MobileAzureDevDaysSampleApp
+namespace MobileAzureDevDaysSampleApp.Pages
 {
     public partial class HomePage : ContentPage
     {
         public HomePage()
         {
             InitializeComponent();
-        }
-
-        void OnSubmitButton(object sender, System.EventArgs e)
-        {
-            throw new NotImplementedException();
         }
     }
 }
