@@ -86,10 +86,10 @@ namespace MobileAzureDevDaysSampleApp.ViewModels
                     EmojiLabelText = EmojiConstants.SadFaceEmoji;
                     break;
                 case float number when (number >= 0.4 && number <= 0.6):
-                    EmojiLabelText = EmojiConstants.HappyFaceEMoji;
+                    EmojiLabelText = EmojiConstants.NeutralFaceEmoji;
                     break;
                 case float number when (number > 0.6):
-                    EmojiLabelText = EmojiConstants.NeutralFaceEMoji;
+                    EmojiLabelText = EmojiConstants.HappyFaceEMoji;
                     break;
             }
         }
