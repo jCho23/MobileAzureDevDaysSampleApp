@@ -26,12 +26,10 @@ namespace MobileAzureDevDaysSampleApp.Droid.Effects
         EditText nativeTextField;
         EditorWithPlaceholder formsEditor;
 
-
 		protected override void OnAttached()
 		{
             formsEditor = Element as EditorWithPlaceholder;
             nativeTextField = Control as EditText;
-
 
             try
             {
