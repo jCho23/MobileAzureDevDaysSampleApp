@@ -7,7 +7,7 @@
 * Never commit to master, you will be shamed
 * Branches will be deleted after a Pull Request has been approved into Master.
 
-
+## General flow for creating a new branch
 1. All spaces should be replaced with a '-'
 2. Ensure the name is similar to the associated Github issue
 3. Perform work in chunks and commit to your branch
