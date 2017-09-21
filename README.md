@@ -10,7 +10,7 @@
 ## General flow for creating a new branch
 
 1. Perform work in chunks and commit to your branch
-* Make sure commit titles are meaningful
-* Be descriptive in the title and the notes
-4. Format code before creating pull request
-5. Create pull request and reference issue in the comments. Assign all pull requests to 
+1 Make sure commit titles are meaningful
+1 Be descriptive in the title and the notes
+2. Format code before creating pull request
+3. Create pull request and reference issue in the comments. Assign all pull requests to 
