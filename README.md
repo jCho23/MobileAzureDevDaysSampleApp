@@ -1,4 +1,6 @@
-#Branching and Pull Requests Guidline
+# Mobile Center / Azure Dev Days Content
+
+## Branching and Pull Requests Guidline
 
 Branches should be matched to a active Github issue.
 Always merge from master into your branch before creating a pull request. This will show you if you have any conflicts with the existing code base
