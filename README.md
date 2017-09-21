@@ -13,7 +13,7 @@
     * Make sure commit titles are meaningful
     * Be descriptive in the title and the notes
 2. Format code before creating pull request
-3. Create pull request and reference issue in the comments. Assign all pull requests to [@June Cho.](https://github.com/jcho23)
+3. Create pull request and reference issue in the comments. Assign all pull requests to [@JuneCho.](https://github.com/jcho23)
 
 ## Code formatting guidelines:
 All code should be formatted to our code guidelines. This will be considered in all pull requests and is a best practice to develop as a team. Please use [David Siegel's cSharp styling guideline.](https://github.com/dvdsgl/csharp-in-style) 
