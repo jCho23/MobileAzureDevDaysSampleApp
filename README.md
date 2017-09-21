@@ -1,6 +1,6 @@
 # Mobile Center / Azure Dev Days Content
 
-* Branching and Pull Requests Guidline
+## Branching and Pull Requests Guidline
 
 * Branches should be matched to a active Github issue.
 * Always merge from master into your branch before creating a pull request. This will show you if you have any conflicts with the existing code base
@@ -8,8 +8,6 @@
 * Branches will be deleted after a Pull Request has been approved into Master.
 
 
-Github issues is assigned to you
-Create a new branch base off master
 All spaces should be replaced with a '-'
 Ensure the name is similar to the associated Github issue
 Perform work in chunks and commit to your branch
