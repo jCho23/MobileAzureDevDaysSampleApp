@@ -1,10 +1,10 @@
 # Mobile Center / Azure Dev Days Content
 
-## Mobile Center Guideline
+## Mobile Center Requirements 
 * Please intergrate all services of Mobile Center into your App
 * Have at least one Sample Test
 
-## Branching and Pull Requests Guidline
+## Branching and Pull Requests Guideline
 
 * Never commit to master, you will be shamed
 * Branches will be deleted after a Pull Request has been approved into Master.
