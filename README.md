@@ -13,4 +13,6 @@
   1. Make sure commit titles are meaningful
   1. Be descriptive in the title and the notes
 2. Format code before creating pull request
-3. Create pull request and reference issue in the comments. Assign all pull requests to 
+3. Create pull request and reference issue in the comments. Assign all pull requests to @jCho23
+
+## Code formatting guidelines:
