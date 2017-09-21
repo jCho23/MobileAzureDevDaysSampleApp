@@ -8,10 +8,10 @@
 * Branches will be deleted after a Pull Request has been approved into Master.
 
 
-All spaces should be replaced with a '-'
-Ensure the name is similar to the associated Github issue
-Perform work in chunks and commit to your branch
-Make sure commit titles are meaningful
-Be descriptive in the title and the notes
-Format code before creating pull request
-Create pull request and reference issue in the comments. Assign all pull requests to 
+1. All spaces should be replaced with a '-'
+2. Ensure the name is similar to the associated Github issue
+3. Perform work in chunks and commit to your branch
+4. Make sure commit titles are meaningful
+5. Be descriptive in the title and the notes
+6. Format code before creating pull request
+7. Create pull request and reference issue in the comments. Assign all pull requests to 
