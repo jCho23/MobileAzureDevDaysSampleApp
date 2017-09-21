@@ -16,3 +16,4 @@
 3. Create pull request and reference issue in the comments. Assign all pull requests to @jCho23
 
 ## Code formatting guidelines:
+All code should be formatted to our code guidelines. This will be considered in all pull requests and is a best practice to develop as a team. Please use David Siegel's chsarp styling
