@@ -1,5 +1,9 @@
 # Mobile Center / Azure Dev Days Content
 
+## Mobile Center Guideline
+* Please intergrate all services of Mobile Center into your App
+* Have at least one Sample Test
+
 ## Branching and Pull Requests Guidline
 
 * Never commit to master, you will be shamed
