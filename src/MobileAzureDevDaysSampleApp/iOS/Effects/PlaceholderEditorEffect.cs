@@ -1,6 +1,4 @@
-﻿using System;
-
-using UIKit;
+﻿using UIKit;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -10,15 +8,10 @@ using MobileAzureDevDaysSampleApp.iOS.Effects;
 
 [assembly: ResolutionGroupName("Xamarin")]
 [assembly: ExportEffect(typeof(PlaceholderEditorEffect), nameof(PlaceholderEditorEffect))]
-
 namespace MobileAzureDevDaysSampleApp.iOS.Effects
 {
     public class PlaceholderEditorEffect : PlatformEffect
     {
-        public PlaceholderEditorEffect()
-        {
-        }
-
         UILabel placeholderText;
         UITextView nativeTextField;
         EditorWithPlaceholder formsEditor;
@@ -72,7 +65,6 @@ namespace MobileAzureDevDaysSampleApp.iOS.Effects
 						placeholderText.Alpha = 0;
                     break;
             }
-
         }
     }
 }

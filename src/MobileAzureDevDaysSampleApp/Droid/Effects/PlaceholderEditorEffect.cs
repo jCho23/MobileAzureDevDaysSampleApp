@@ -1,6 +1,4 @@
-﻿using System;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 using MobileAzureDevDaysSampleApp.Controls;
@@ -8,7 +6,6 @@ using MobileAzureDevDaysSampleApp.Droid.Effects;
 
 [assembly: ResolutionGroupName("Xamarin")]
 [assembly: ExportEffect(typeof(PlaceholderEditorEffect), nameof(PlaceholderEditorEffect))]
-
 namespace MobileAzureDevDaysSampleApp.Droid.Effects
 {
     public class PlaceholderEditorEffect
