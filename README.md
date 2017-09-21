@@ -1,5 +1,3 @@
-# MobileAzureDevDaysSampleApp
-
 #Branching and Pull Requests Guidline
 
 Branches should be matched to a active Github issue.
