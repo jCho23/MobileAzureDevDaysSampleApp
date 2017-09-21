@@ -57,7 +57,6 @@
             IsVisible="true"
             TextColor= "White"
             Text= "Calculating Sentiment..."
-
-        HorizontalOptions= "Center" VerticalOptions= "Center"/>
+            HorizontalOptions= "Center" VerticalOptions= "Center"/>
     </StackLayout>
 </ContentPage>
