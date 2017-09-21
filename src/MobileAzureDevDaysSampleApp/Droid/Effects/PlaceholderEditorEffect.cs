@@ -1,4 +1,8 @@
-﻿using Xamarin.Forms;
+﻿using System;
+
+using Android.Widget;
+
+using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 using MobileAzureDevDaysSampleApp.Controls;
@@ -12,13 +16,43 @@ namespace MobileAzureDevDaysSampleApp.Droid.Effects
     {
         Android.Graphics.Color backgroundColor;
 
+        public PlaceholderEditorEffect()
+        {
+            
+        }
+
+		TextView placeholderText;
+        EditText nativeTextField;
+        EditorWithPlaceholder formsEditor;
+
+
 		protected override void OnAttached()
 		{
-			try
-			{
+            formsEditor = Element as EditorWithPlaceholder;
+            nativeTextField = Control as EditText;
+
+
+            try
+            {
+				placeholderText = new TextView(Forms.Context)
+                {
+                    Text= formsEditor.Placeholder,
+                    
+                };
+                placeholderText.SetBackgroundColor(Android.Graphics.Color.Transparent);
+                placeholderText.SetTextColor(formsEditor.PlaceholderTextColor.ToAndroid());
+                placeholderText.SetLines(1);
+
+
                 backgroundColor = Android.Graphics.Color.White;
 				Control.SetBackgroundColor(backgroundColor);
 
+				if (string.IsNullOrEmpty(formsEditor.Text))
+					placeholderText.Alpha = 1;
+				else
+					placeholderText.Alpha = 0;
+
+				nativeTextField.Add(placeholderText);
 			}
 			catch (Exception ex)
 			{
