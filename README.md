@@ -2,8 +2,6 @@
 
 ## Branching and Pull Requests Guidline
 
-* Branches should be matched to a active Github issue.
-* Always merge from master into your branch before creating a pull request. This will show you if you have any conflicts with the existing code base
 * Never commit to master, you will be shamed
 * Branches will be deleted after a Pull Request has been approved into Master.
 
