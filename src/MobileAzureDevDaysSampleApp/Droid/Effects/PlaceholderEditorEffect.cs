@@ -1,7 +1,10 @@
 ﻿using System;
-using MobileAzureDevDaysSampleApp.Droid.Effects;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+
+using MobileAzureDevDaysSampleApp.Controls;
+using MobileAzureDevDaysSampleApp.Droid.Effects;
 
 [assembly: ResolutionGroupName("Xamarin")]
 [assembly: ExportEffect(typeof(PlaceholderEditorEffect), nameof(PlaceholderEditorEffect))]
@@ -19,10 +22,10 @@ namespace MobileAzureDevDaysSampleApp.Droid.Effects
                 if (Element == null)
                     return;
 
-                var element = (PlaceholderEditor)Element;
+                var element = (EditorWithPlaceholder)Element;
 
                 Control.Hint = element.Placeholder;
-                Control.SetHintTextColor(element.PlaceholderColor.ToAndroid());
+                Control.SetHintTextColor(element.PlaceholderTextColor.ToAndroid());
             }
         }
     }
