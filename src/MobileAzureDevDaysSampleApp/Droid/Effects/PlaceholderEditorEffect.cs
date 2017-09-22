@@ -10,7 +10,6 @@ using MobileAzureDevDaysSampleApp.Droid.Effects;
 
 [assembly: ResolutionGroupName("Xamarin")]
 [assembly: ExportEffect(typeof(PlaceholderEditorEffect), nameof(PlaceholderEditorEffect))]
-
 namespace MobileAzureDevDaysSampleApp.Droid.Effects
 {
     public class PlaceholderEditorEffect : PlatformEffect

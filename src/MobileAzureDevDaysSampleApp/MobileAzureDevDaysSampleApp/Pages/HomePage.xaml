@@ -2,9 +2,10 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="MobileAzureDevDaysSampleApp.HomePage"
+    x:Class="MobileAzureDevDaysSampleApp.Pages.HomePage"
     xmlns:local="clr-namespace:MobileAzureDevDaysSampleApp.Controls"
-    BackgroundColor= "#FF6F69" >
+    IsBusy="{Binding IsInternetConnectionActive}"
+    BackgroundColor= "{Binding BackgroundColor}" >
 
     <ContentPage.Padding>
         <OnPlatform 
@@ -32,8 +33,8 @@
             </Frame.HasShadow>
                 
             <local:EditorWithPlaceholder 
-                Placeholder="Add Text here...">
-            </local:EditorWithPlaceholder>    
+                Placeholder="Add Text here..."
+                Text="{Binding UserInputEditorText}"/> 
         </Frame>
 
         <Button
@@ -41,22 +42,27 @@
             Margin= "50,10"
             FontSize= "Large"
             TextColor= "White"
-            Clicked= "OnSubmitButton" 
+            Command="{Binding SubmitButtonCommand}"
+            IsEnabled="{Binding IsInternetConnectionInactive}"
             BorderRadius="0" BorderWidth="1" BorderColor = "White"
             HorizontalOptions= "FillAndExpand" VerticalOptions= "Center" />
 
         <ActivityIndicator
             Color= "White"
             Margin= "20,20"
-            IsVisible="true"
-            IsRunning= "true"
-            HorizontalOptions ="Center" VerticalOptions= "Center" /> 
-        <!--  "{Binding Source={x:Reference ... }, Path=IsLoading}"-->
+            IsVisible="{Binding IsInternetConnectionActive}"
+            IsRunning="{Binding IsInternetConnectionActive}"
+            HorizontalOptions ="Center" VerticalOptions= "Center" />
 
         <Label
-            IsVisible="true"
+            IsVisible="{Binding IsInternetConnectionActive}"
             TextColor= "White"
             Text= "Calculating Sentiment..."
+            HorizontalOptions= "Center" VerticalOptions= "Center"/>
+        <Label
+            FontSize="200"
+            Text="{Binding EmojiLabelText}"
+            HorizontalTextAlignment="Center"
             HorizontalOptions= "Center" VerticalOptions= "Center"/>
     </StackLayout>
 </ContentPage>

@@ -1,20 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Xamarin.Forms;
+using MobileAzureDevDaysSampleApp.ViewModels;
+using System;
 
-using Xamarin.Forms;
-
-namespace MobileAzureDevDaysSampleApp
+namespace MobileAzureDevDaysSampleApp.Pages
 {
     public partial class HomePage : ContentPage
     {
+        readonly HomeViewModel viewModel;
+
         public HomePage()
         {
             InitializeComponent();
+
+            viewModel = new HomeViewModel();
+            BindingContext = viewModel;
         }
 
-        void OnSubmitButton(object sender, System.EventArgs e)
+        protected override void OnAppearing()
         {
-            throw new NotImplementedException();
+            base.OnAppearing();
+
+            viewModel.SentimentAnalyisFailed += HandleSentimentAnalyisFailed;
         }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            viewModel.SentimentAnalyisFailed -= HandleSentimentAnalyisFailed;
+        }
+
+        void HandleSentimentAnalyisFailed(object sender, string ErrorMessage) =>
+            Device.BeginInvokeOnMainThread(async () => await DisplayAlert("Error", ErrorMessage, "OK"));
     }
 }
