@@ -107,20 +107,23 @@ namespace MobileAzureDevDaysSampleApp.ViewModels
                 case float number when (number > 0.2 && number <= 0.3):
                     BackgroundColor = ColorConstants.EmotionColor3;
                     break;
-                case float number when (number > 0.3 && number <= 0.6):
+                case float number when (number > 0.3 && number <= 0.4):
                     BackgroundColor = ColorConstants.EmotionColor4;
                     break;
+				case float number when (number > 0.4 && number <= 0.6):
+					BackgroundColor = ColorConstants.EmotionColor5;
+					break;
                 case float number when (number > 0.6 && number <= 0.7):
-                    BackgroundColor = ColorConstants.EmotionColor5;
-                    break;
-                case float number when (number > 0.7 && number <= 0.8):
                     BackgroundColor = ColorConstants.EmotionColor6;
                     break;
-                case float number when (number > 0.8 && number <= 0.9):
+                case float number when (number > 0.7 && number <= 0.8):
                     BackgroundColor = ColorConstants.EmotionColor7;
                     break;
-                case float number when (number > 0.9):
+                case float number when (number > 0.8 && number <= 0.9):
                     BackgroundColor = ColorConstants.EmotionColor8;
+                    break;
+                case float number when (number > 0.9):
+                    BackgroundColor = ColorConstants.EmotionColor9;
                     break;
             }
         }
