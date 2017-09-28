@@ -294,3 +294,4 @@ project.lock.json
 .vs/
 
 *.paw
+.DS_Store
