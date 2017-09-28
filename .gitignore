@@ -192,7 +192,6 @@ TestResults/
 # globs
 Makefile.in
 *.DS_Store
-.DS_Store
 *.sln.cache
 *.cache
 *.pidb
@@ -295,7 +294,3 @@ project.lock.json
 .vs/
 
 *.paw
-
-*.xcbkptlist
-*.xcuserstate
-*.xcworkspacedata
